@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*リセットCSSとは、ブラウザによって異なるデフォルトのCSSを打ち消してブラウザ間の表示を揃えるためのCSSファイル*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+
+
+body {
+	overflow: hidden;
+}
+
+.modal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	transition: 0.25s;
+}
+
+.modal.is-Hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-container {
+	padding: 24px 24px 26px;
+	width: 200px;
+	background-color: #fff;
+	border-radius: 8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.modal_button {
+	margin: 0 auto;
+	padding: 12px 0;
+	display: block;
+	width: 200px;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.3em;
+	line-height: 1.6;
+	transition: 0.25s;/*アニメーションの変化速度*/
+}
+
+.modal_button.is-Hidden {
+	opacity: 0.25;
+	pointer-events: none;
+}
+
+.modal_back {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+canvas {
+	position: relative;
+	z-index: 1;
+}
+
+.title{
+position: absolute;
+top: 5%;
+left: 3.5%;
+
+letter-spacing: 0.1em;
+font-family:'YuGothic';
+line-height: 1.8;
+z-index: 2;
+}
+
+.mt{
+/*font-weight:bold;*/
+font-size: 1.2em;
+}
+
+.artist{
+font-size: 1.1em;
+}
+
+.jacket{
+position: absolute;
+top: 17%;
+left: 3.5%;
+z-index: 2;
+}
